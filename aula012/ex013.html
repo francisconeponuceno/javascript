@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições if</title>
+</head>
+<body>
+    <h1>Condições if </h1>
+    <script>
+        var agora = new Date()
+        var diaSem = agora.getDay()
+        
+        window.document.write(`${diaSem} </br>`)
+        switch(diaSem) {
+            case 0:
+                window.document.write(`Domingo`)
+                break
+            case 1:
+                window.document.write(`Segunda`)
+                break
+            case 2:
+                window.document.write(`Terça`)
+                break
+            case 3:
+                window.document.write(`Quarta`)
+                break
+            case 4:
+                window.document.write(`Quinta`)
+                break
+            case 5:
+                window.document.write(`Sexta`)
+                break
+            case 6:
+                window.document.write(`Sábado`)
+                break
+            default:
+                window.document.write(`[ERRO] dia inválido`)
+                break
+            }
+    </script>
+</body>
+</html>

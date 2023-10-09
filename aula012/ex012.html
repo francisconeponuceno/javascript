@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições if</title>
+</head>
+<body>
+    <h1>Condições if</h1>
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        window.document.write(`Agora são exatamente ${hora} horas </br>`)
+        if (hora < 12) {
+            window.document.write(`Bom dia!`)
+        }else if (hora <= 18) {
+            window.document.write(`Boa tarde!`)
+        }else {
+            window.document.write(`Boa noite!`)
+        }
+    </script>
+</body>
+</html>
