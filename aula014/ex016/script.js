@@ -7,7 +7,15 @@ function contar() {
     if (ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
         window.alert('[ERRO] Faltam dados!')
     } else {
-        alert('TUDO OK')
+        res.innerHTML = 'Contador '
+        var i = Number(ini.value)
+        var f = Number(fim.value)
+        var p = Number(passo.value)
+
+        for (var c = i; c <= f; c += p) {
+            res.innerHTML += ` ${c} \u{1F449}`
+        }
+        res.innerHTML += `\u{1f3c1}`
     }
 }
 
